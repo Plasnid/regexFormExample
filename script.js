@@ -1,5 +1,12 @@
 let fieldsCheck;
 
+function secretCheck(strVal){
+    let secPat = /^[A-Z]{1}[A]{1}[a-z]+[L]{1}[a-z]+[I]{1}[a-z]+[E]{1}[a-z]+[N]{1}$/
+    if(secPat.test(strVal)){
+        return true;
+    }
+    return false;
+}
 function hasCharsCheck(dataToCheck){
     let pat2 = /^[a-zA-Z]+$/;
     if(pat2.test(dataToCheck.field.value)){
@@ -33,6 +40,14 @@ function formChecker(e){
     });
     if(errorsDetected>0){
         console.log("correct errors before submitting");
+    }else{
+    document.querySelector("#firstName").value;
+        let showSecret = secretCheck(document.querySelector("#firstName").value);
+        if(showSecret){
+            console.log("show secret alien message!");
+        }else{
+            console.log("You are not from zerkblatt!");
+        }
     }
 }
 
@@ -51,7 +66,6 @@ function initForm(){
     let formSubmit = document.querySelector("#formSubmit");
     formSubmit.addEventListener("click", formChecker);    
 }
-
 document.addEventListener("DOMContentLoaded", function() {
     initForm();
 });
