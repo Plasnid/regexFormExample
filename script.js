@@ -1,8 +1,6 @@
 let fieldsCheck;
 
 function hasCharsCheck(dataToCheck){
-    console.log("about to do a charsCheck");
-    console.log(dataToCheck.field.value);
     let pat2 = /^[a-zA-Z]+$/;
     if(pat2.test(dataToCheck.field.value)){
         return true;
@@ -10,8 +8,6 @@ function hasCharsCheck(dataToCheck){
     return false;
 }
 function hasNumsCheck(dataToCheck){
-    console.log("about to do a charsCheck");
-    console.log(dataToCheck.field.value);
     let pat2 = /^[0-9]+$/;
     if(pat2.test(dataToCheck.field.value)){
         return true;
@@ -57,6 +53,5 @@ function initForm(){
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-    console.log("Here's johnny!");
     initForm();
 });
