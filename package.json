@@ -1,0 +1,22 @@
+{
+  "name": "regex_form_example",
+  "version": "1.0.0",
+  "description": "a simple example regex form",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Plasnid/regexFormExample.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Plasnid/regexFormExample/issues"
+  },
+  "homepage": "https://github.com/Plasnid/regexFormExample#readme",
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  }
+}
