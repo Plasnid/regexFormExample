@@ -66,6 +66,5 @@ function initForm(){
     let formSubmit = document.querySelector("#formSubmit");
     formSubmit.addEventListener("click", formChecker);    
 }
-document.addEventListener("DOMContentLoaded", function() {
-    initForm();
-});
+
+initForm();
